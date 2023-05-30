@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --cor-textoPrincipal: #FFFFFF;
+    --cor-textoSecundario: #C0C0C0;
+    --botao-principal: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'inter';
+    --cor-emcima-botao: #3688ec;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-textoPrincipal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+}
+
+.principal {
+    background-image: url("../assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container_caixa{
+    margin: 0 6em;
+}
+
+.container__titulo{
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0 ;
+}
+
+.container__botao{
+    color: var(--cor-textoPrincipal);
+    background-color: var(--botao-principal);
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    display: block;
+}
+
+.container__botao:hover{
+ background-color: var(--cor-emcima-botao);
+ color: #000000;
+}
+
+.container__botao2{
+    background-color: transparent;
+    border: 2px solid var(--cor-textoPrincipal);
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cor-textoSecundario);
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secudario__imagem{
+    width: 80%;
+}
+
+.container_descricao{
+    padding: 2em;
+}
+
+.secundario__titulo{
+    font-size: 48px;
+    margin-bottom: 0.1em;
+}
+
+.secundario__texto{
+    color: var(--cor-textoSecundario);
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.dispositivos__titulo{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__lista__texto{
+    font-size: 32px;
+}
+
+.rodape {
+    text-align: center;
+    padding: 3em;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.8em;
+    
+}
+
+.lista__links{
+    list-style-type: none;
+}
+
+.lista__links__a{
+    color: var(--cor-textoPrincipal);
+    text-decoration: none;
+}
+
+.rodape__texto{
+    color: var(--cor-textoSecundario);
+    margin: 1.5em;
+    font-size: 14px;
+}
+
+.lista__links__a:hover{
+    color: var(--botao-principal);
+}
